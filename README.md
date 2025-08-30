@@ -8,6 +8,8 @@ LeoIoT is a Python-based home assistant designed to run on Raspberry Pi Zero 2W 
 - **Cloud Server:** Raspberry Pi 5 (runs Flask API, Vosk, OpenAI GPT, TTS, etc.)
 - **Role:** Pi Zero 2W handles wake word detection, records voice, sends audio to the cloud, and plays AI responses.
 
+This project relies on the [LeoAPI](https://github.com/frolicxpg/LeoAPI) for AI server setup and integration.
+
 ## Hardware Setup (Pi Zero 2W)
 
 - **Audio Input:** ReSpeaker 2-Mic Pi Hat on GPIO
@@ -32,14 +34,14 @@ LeoIoT is a Python-based home assistant designed to run on Raspberry Pi Zero 2W 
 
 ### Installation
 
+Before proceeding, set up the AI server using [LeoAPI](https://github.com/frolicxpg/LeoAPI).
+
 ```bash
 git clone https://github.com/frolicxpg/LeoIoT.git
 cd LeoIoT/
 pip install -r requirements.txt
 python main.py
 ```
-
-- Configure API endpoint for your cloud server in config files.
 
 ## Troubleshooting
 
