@@ -1,0 +1,9 @@
+langdetect
+pygame
+requests
+dotenv
+openai
+attrs
+sounddevice
+vosk
+nltk
