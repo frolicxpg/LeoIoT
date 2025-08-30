@@ -14,7 +14,7 @@ HINDI_MODEL = Model("vosk-model-hi-0.22")
 sample_rate = 16000
 q = queue.Queue()
 
-wake_words = ["leo", "lino", "leno", "lena", "leeno", "leena", "lina", "linoo", "nina", "lilo", "nino", "lynn", "lima"]
+wake_words = ["leo", "hello"] # Add your wake words here e.g., ["leo", "hello"]
 
 # Callback for mic input
 def callback(indata, status):
